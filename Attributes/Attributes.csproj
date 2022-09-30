@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<LangVersion>10.0</LangVersion>
+	<AnalysisLevel>6.0-all</AnalysisLevel>
+	<Nullable>enable</Nullable>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Authors>hyunq21</Authors>
+	<Version>1.0.0</Version>
+  </PropertyGroup>
+
+</Project>
