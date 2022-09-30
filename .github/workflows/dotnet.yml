@@ -1,25 +1,26 @@
-name: Publish Packages
-
+name: publish to nuget
 on:
   push:
-    branches: [ master ]
-
+    branches:
+      - master
 jobs:
-  build:
-    runs-on: ubuntu-latest # windows
-
+  publish:
+    name: build, pack & publish
+    runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 6.0.*
-    - name: Install dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-    - name: Publish QAttribute
-      uses: brandedoutcast/publish-nuget@v2.5.5
-      with:
-          PROJECT_FILE_PATH: ./QAttribute/QAttribute.csproj
+      - uses: actions/checkout@v2
+
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.*
+
+      # Publish
+      - name: publish on version change
+        id: publish_nuget
+        uses: alirezanet/publish-nuget@v3.0.4
+        with:
+          PROJECT_FILE_PATH: QAttribute/QAttribute.csproj
+          BUILD_CONFIGURATION: Release
+          BUILD_PLATFORM: x64 
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
