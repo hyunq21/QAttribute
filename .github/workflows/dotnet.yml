@@ -18,7 +18,8 @@ jobs:
       # Publish
       - name: publish on version change
         id: publish_nuget
-        uses: brandedoutcast/publish-nuget@v2
+        uses: brandedoutcast/publish-nuget@v2.5.5
+
         with:
           PROJECT_FILE_PATH: QAttribute/QAttribute.csproj # Filepath of the project to be packaged, relative to root of repository
           BUILD_CONFIGURATION: Release # Configuration to build and package
