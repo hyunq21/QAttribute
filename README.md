@@ -1,6 +1,6 @@
 ### **QAttribute** 
-![Nuget](https://img.shields.io/nuget/v/QAttribute)
-![Nuget](https://img.shields.io/nuget/dt/QAttribute)
+![Nuget](https://img.shields.io/nuget/v/QAttribute?logo=Nuget)
+![Nuget](https://img.shields.io/nuget/dt/QAttribute?logo=DocuSign&logoColor=FFFFFF)
  ---
 #### **[QBinding]**
 By adding the [QBinding] attribute to the class, it automatically creates a binding property by adding only a field.
