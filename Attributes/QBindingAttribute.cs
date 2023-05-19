@@ -9,7 +9,7 @@
     public class QNoBindingAttribute : System.Attribute
     {
     }
-
+     
     [System.AttributeUsage(System.AttributeTargets.Field)]
     public class QVirtualAttribute : System.Attribute
     {

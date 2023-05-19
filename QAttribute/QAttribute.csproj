@@ -8,7 +8,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<Authors>hyunq21</Authors>
-		<Version>1.0.31</Version>
+		<Version>1.0.32</Version>
 		<PackageReadmeFile>Readme.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/hyunq21/QAttribute</RepositoryUrl> 
 		<RepositoryType>git</RepositoryType> 
