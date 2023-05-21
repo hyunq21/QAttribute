@@ -2,7 +2,6 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<LangVersion>10.0</LangVersion>
-		<AnalysisLevel>6.0-all</AnalysisLevel>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -10,7 +9,7 @@
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 		<AnalysisLevel>latest</AnalysisLevel>
 		<Authors>hyunq21</Authors>
-		<Version>1.0.33</Version>
+		<Version>1.0.34</Version>
 		<PackageReadmeFile>Readme.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/hyunq21/QAttribute</RepositoryUrl> 
 		<RepositoryType>git</RepositoryType> 
@@ -19,11 +18,11 @@
 	<ItemGroup>
 		<None Include="..\Readme.md" Pack="true" PackagePath="\" />
 		
-		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" PrivateAssets="all">
+		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3" PrivateAssets="all">
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 		
-		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.6.0" PrivateAssets="all" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.2.0" PrivateAssets="all" />
 
 		<!-- Reference the attributes from the generator to compile against them -->
 		<!-- Ensure we specify PrivateAssets so the NuGet doesn't have any dependencies -->
