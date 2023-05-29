@@ -1,4 +1,4 @@
-## **QAttribute** ![Nuget](https://img.shields.io/nuget/v/QAttribute?logo=Nuget) ![Nuget](https://img.shields.io/nuget/dt/QAttribute?logo=DocuSign&logoColor=FFFFFF)
+## **QAttribute** [![Nuget](https://img.shields.io/nuget/v/QAttribute?logo=Nuget)](https://www.nuget.org/packages/QAttribute) [![Nuget](https://img.shields.io/nuget/dt/QAttribute?logo=DocuSign&logoColor=FFFFFF)](https://www.nuget.org/packages/QAttribute)
 ##### It is a tool that helps to easily implement c# IPropertyChanged and ICommnad, and I made it for study haha.
 ##### Just use the Community Toolkit
 
